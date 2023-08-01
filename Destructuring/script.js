@@ -32,3 +32,28 @@ const [sum, multiple, division] = sumAndMultiply(2, 4);
 console.log(sum);
 console.log(multiple);
 console.log(division);
+
+/* Object destructuring with example */
+
+
+const personOne = {
+    name: "prince",
+    age: 27, address: {
+        city: "Indore", state: "Another one of them"
+    }
+};
+const personTwo = {
+    name: "John Doe ",
+    age: 32, address: {
+        city: "somewhere else", state: "another one of them"
+    }
+};
+
+const { name, age } = personTwo;
+console.log(name);
+console.log(age);
+
+
+const { ...newObject } = personOne;
+console.log(newObject);
+
