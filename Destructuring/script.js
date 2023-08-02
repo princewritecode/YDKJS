@@ -48,12 +48,27 @@ const personTwo = {
         city: "somewhere else", state: "another one of them"
     }
 };
-
 const { name, age } = personTwo;
 console.log(name);
 console.log(age);
-
-
 const { ...newObject } = personOne;
 console.log(newObject);
+const values = [22, 33, 44, [55, 66], 77];
+console.log(Math.max(...values));
 
+console.log(...values);
+
+
+const arr = [1, 2, 3];
+const arr2 = arr;
+// arr2[0] = 5;
+// console.log(arr);
+// console.log(arr2);
+
+const arr3 = [...arr];
+arr3[0] = 5;
+
+
+const arr4 = [1, 2, [3, 4, 5], 6, 7];
+const arr5 = [...arr4];
+arr5[2][0] = 6;
