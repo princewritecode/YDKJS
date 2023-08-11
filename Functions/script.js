@@ -64,3 +64,23 @@ const output = arr2.reduce((acc, curr) => {
 console.log(output);
 //*curr or current represents the current element in the array while we are iterating
 //*acc or accumulator is used to accumulates the value like for example sum that we did.
+
+
+/**
+ * now let's solve some questions based on filter map reduce
+ */
+
+const users = [
+    { firstName: "prince", lastName: "patel", age: 27 },
+    { firstName: "suri", lastName: "patel", age: 24 },
+    { firstName: "avi", lastName: "patel", age: 27 },
+    { firstName: "additya", lastName: "patel", age: 24 }
+];
+
+//find list of full name
+
+const listName = users.map((user) => {
+    return user.firstName + " " + user.lastName;
+});
+console.log(listName);
+
