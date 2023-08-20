@@ -72,3 +72,15 @@ arr3[0] = 5;
 const arr4 = [1, 2, [3, 4, 5], 6, 7];
 const arr5 = [...arr4];
 arr5[2][0] = 6;
+
+
+function sayHi() {
+    console.log(name);
+    console.log(age);
+    var name = 'Lydia';
+    let age = 21;
+}
+//Lydia 21
+
+console.log(lone);
+var lone = 22;
