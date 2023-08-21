@@ -37,6 +37,7 @@ console.log(Array.isArray(array));
 // every element in html elemnt in web app will be object
 
 // RestaurantList is JSON Data for displaying cards
+/*
 const restaurantList = [
     {
         type: "restaurant",
@@ -1855,3 +1856,16 @@ const restaurantList = [
     },
 ];
 console.log(restaurantList[1].data.name);
+*/
+
+
+const arr = [11, 22, 33, 44];
+const arr3 = [...arr];
+arr3[0] = 5;
+
+const arr4 = [1, 2, [3, 4, 5], 6, 7];
+const arr5 = [...arr4];
+arr5[2][0] = 6;
+console.log(arr4);
+console.log(arr5);
+//because as the array inside array still have reference to original array so if it changes all changes
