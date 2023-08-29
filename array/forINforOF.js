@@ -1869,3 +1869,8 @@ arr5[2][0] = 6;
 console.log(arr4);
 console.log(arr5);
 //because as the array inside array still have reference to original array so if it changes all changes
+
+arr.forEach((val) => {
+    console.log(val);
+});
+
