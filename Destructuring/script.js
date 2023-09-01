@@ -163,3 +163,4 @@ function sumVal(arr) {
     return sum;
 }
 console.log(sumVal([1, 3, 5, 7]));
+
