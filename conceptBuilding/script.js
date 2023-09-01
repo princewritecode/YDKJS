@@ -96,8 +96,6 @@ function letScoping() {
     console.log(x); // will print 1
 }
 
-
-
 //** callback functions */
 
 function modifyArray(arr, callback) {
