@@ -1,41 +1,44 @@
+/*
 console.log("Welcome to Destructuring in javascript");
 const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
 console.log(alphabet[0]);
 console.log(alphabet[1]);
 const numbers = ['1', '2', '3', '4', '5', '6', '7'];
-
+*/
 //spread operator
+/*
 const [a, , c, , e, ...remain] = alphabet;
 console.log(a, c, e);
 console.log(remain);
-
+*/
 //now creating a copy of an array called alphabet
+/*
 const [...full] = alphabet;
 console.log(full);
 console.log(full.length);
 full[9] = "J";
 console.log(full);
 console.log(alphabet);
-
+*/
 //now let's add two array or combine two arrays
 
-const [...newer] = numbers;
-const newArr = [...full, ...newer];
-console.log(newArr);
+// const [...newer] = numbers;
+// const newArr = [...full, ...newer];
+// console.log(newArr);
 
-function sumAndMultiply(a, b) {
-    return [a + b, a * b, a / b];
-}
-const array = sumAndMultiply(2, 3);
-console.log(array);
-const [sum, multiple, division] = sumAndMultiply(2, 4);
-console.log(sum);
-console.log(multiple);
-console.log(division);
+// function sumAndMultiply(a, b) {
+//     return [a + b, a * b, a / b];
+// }
+// const array = sumAndMultiply(2, 3);
+// console.log(array);
+// const [sum, multiple, division] = sumAndMultiply(2, 4);
+// console.log(sum);
+// console.log(multiple);
+// console.log(division);
 
 /* Object destructuring with example */
 
-
+/*
 const personOne = {
     name: "prince",
     age: 27, address: {
@@ -84,7 +87,7 @@ function sayHi() {
 
 console.log(lone);
 var lone = 22;
-
+*/
 /*
 let person = {
     firstName: "prince",
@@ -119,13 +122,14 @@ const arrValue = ['one', 'two', 'three'];
 const [f, , d] = arrValue;
 console.log(f, d);
 */
-
+/*
 const arrValue = ["prince", "walker", "loner", "billionaire"];
 const [d, b, ...newValu] = arrValue;
 console.log(b, d, newValu);
-
+/*
 //**swapping name in one line of code */
 
+/*
 let nameOne = "prince";
 let nameTwo = "tanisha";
 
@@ -142,7 +146,7 @@ let number = {
 
 let { name: { firstName, lastName } } = number;
 console.log(firstName, lastName);
-
+*/
 // reduce in javascript practice
 /**
  * The reduce() method executes a reducer function for array element
@@ -155,6 +159,7 @@ console.log(firstName, lastName);
 //array.reduce(function(total,currentValue,currentIndex,arr),initialValue)
 //old calculating numbers on a regular for loop:
 
+/*
 function sumVal(arr) {
     let sum = 0;
     for (const val of arr) {
@@ -163,4 +168,7 @@ function sumVal(arr) {
     return sum;
 }
 console.log(sumVal([1, 3, 5, 7]));
+
+*/
+
 
