@@ -171,4 +171,4 @@ console.log(sumVal([1, 3, 5, 7]));
 
 */
 
-
+//finding maximum number in array
