@@ -107,7 +107,7 @@ tanish.calculateAge();
 console.log(Person.prototype == tanish.__proto__);
 */
 
-
+/*
 function Car(speed) {
     this.speed = speed;
 }
@@ -122,3 +122,60 @@ Car.prototype.brake = function () {
 const bmw = new Car(120);
 bmw.accelerate();
 bmw.brake();
+
+*/
+
+/*
+const account = {
+    owner: 'Jonas',
+    movements: [200, 530, 120, 300],
+    get latest() {
+        return this.movements.slice(-1).pop();
+    },
+    set latest(mov) {
+        this.movements.push(mov);
+    }
+};
+console.log(account.latest);
+account.latest = 50;
+console.log(account.movements);
+*/
+
+//let's understand how object.create works
+/*
+const protoObject = {
+    calcAge() {
+        console.log("inside protoObject");
+    }
+};
+const protoObject2 = {
+    calcAge() {
+        console.log("inside protoOBject 2");
+    }
+};
+
+const newObject = Object.create(protoObject);
+console.log(newObject);
+newObject.calcAge();
+
+const newObject2 = Object.create(protoObject2);
+newObject2.calcAge();
+*/
+
+const Person = function (firstName, birthYear) {
+    this.firstName = firstName;
+    this.birthYear = birthYear;
+};
+Person.prototype.calcAge = function () {
+    console.log(` ${2023 - this.birthYear} `);
+};
+
+const Student = function (firstName, birthyear, course) {
+    Person.call(this, firstName, birthyear);
+    this.course = course;
+};
+Student.prototype.introduce = function () {
+    console.log(`My name is ${this.firstName} and i study ${this.course} here`);
+};
+const mike = new Student("mikepompeii", 2023, "computer science");
+mike.introduce();
