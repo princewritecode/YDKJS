@@ -15,8 +15,4 @@ else console.log('wrong');
 
 //function to add two numbers
 
-function adding(a, b) {
-    return a + b;
-}
 
-console.log(adding(21, 22));
